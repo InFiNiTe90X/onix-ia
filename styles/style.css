@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: "lato", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-repeat:repeat-x;
+    background-image: linear-gradient(rgba(0, 0, 51, 0.8), rgba(52, 1, 238, 0.5)), url("../img/logobanner.jpg");
+    background-color: rgba(0, 0, 51);
+    color: white;
+}
+
+header .header {
+    margin-top: 20px;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 18vh;
+}
+
+.left-nav ul {
+    margin-left: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.right-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.jumbotron {
+    padding:20px;
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+h6 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#Content {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#Content ul {
+    list-style: none;
+}
+
+#Content img {
+    width: 15px;
+}
+
+#featcontent {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+#banner img {
+    width: 500px;
+    border-radius: 50px;
+}
+
+.blog {
+    background-color: rgba(255, 255, 255, 0.884);
+    background-position: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    gap: 20px;
+}
+
+figure{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    border-color: rgb(4, 129, 129);
+    border-style: dashed;
+    color: rgba(0, 0, 0, 0.349);
+}
+
+figure img{
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#descript{
+    margin: 10px;
+    justify-content:space-between;
+    align-content: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section .signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(12, 13, 14, 0.445);
+  }
+  
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: black;
+  }
+
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  }
+
+  /* Style the inputs */
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  /* Hide the placeholder texts (a) */
+  
+  ::placeholder {
+    color: transparent;
+  }
+
+  /* Styling text labels */
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(23, 0, 128);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #677dc5;
+    transform: translateY(-2px);
+  }
+
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 2, 128);
+  }
+
+  .input:focus {
+    border: 2px solid rgb(34, 0, 128);
+  }
+
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+footer{
+    background-image: linear-gradient(rgba(0, 0, 51, 0.8), rgba(52, 1, 238, 0.5)), url("../img/footerbanner.gif");
+    background-color: rgba(0, 0, 51);
+
+}
