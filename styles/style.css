@@ -75,8 +75,8 @@ h6 {
 }
 
 #banner img {
-    width: 500px;
-    border-radius: 50px;
+    width: 80%;
+    border-radius: 15px;
 }
 
 .blog {
@@ -121,6 +121,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 20px;
 }
 
 section .signupFrm {
@@ -130,7 +131,7 @@ section .signupFrm {
 }
 
 .form {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.61);
     width: 400px;
     border-radius: 8px;
     padding: 20px 40px;
@@ -150,37 +151,34 @@ section .signupFrm {
     margin-bottom: 17px;
 }
 
-/* Style the inputs */
-
 .input {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    border: 1px solid #DADCE0;
+    border: 1px solid #000000;
     border-radius: 7px;
     font-size: 16px;
     padding: 0 20px;
     outline: none;
     background: none;
-    z-index: 1;
+    z-index: 0;
 }
 
-/* Hide the placeholder texts (a) */
 ::placeholder {
     color: transparent;
 }
 
-/* Styling text labels */
 
 .label {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
     padding: 0 4px;
-    background-color: white;
-    color: #DADCE0;
+    background-color: rgb(255, 255, 255, 0.61);
+    border-radius: 10px;
+    color: #000000;
     font-size: 16px;
     transition: 0.5s;
     z-index: 0;
@@ -191,7 +189,7 @@ section .signupFrm {
     margin-left: auto;
     padding: 15px 30px;
     border: none;
-    background-color: rgb(23, 0, 128);
+    background-color: rgb(23, 0, 128, 0.61);
     color: white;
     border-radius: 6px;
     cursor: pointer;
@@ -210,11 +208,11 @@ section .signupFrm {
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
-    color: rgb(0, 2, 128);
+    color: rgb(0, 0, 0);
 }
 
 .input:focus {
-    border: 2px solid rgb(34, 0, 128);
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .input:not(:placeholder-shown)+ .label {
@@ -224,9 +222,52 @@ section .signupFrm {
     font-size: 14psx;
     font-weight: 600;
 }
+
 footer {
     background-image: linear-gradient(rgba(0, 0, 51, 0.8), rgba(52, 1, 238, 0.5)), url("../img/footerbanner.gif");
     background-color: rgba(0, 0, 51);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 50vh;
 }
+footer #slogan{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer #slogan img{
+    height: 20%;
+    vertical-align: middle;
+}
+
+#social{
+    margin-top: 60px;
+}
+
+#social ul{
+    margin: 30px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px
+}
+
+#paginas ul{
+    margin-top: 60px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#servicios ul{
+    margin-top: 60px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul img{
+    width: 35px;
+}
+
